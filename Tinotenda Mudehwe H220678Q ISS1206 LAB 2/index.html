@@ -1,0 +1,141 @@
+<!--- ---index.html--- --->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-80">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title> TINOTENDA PORTFOLIO WEBSITE</title>
+    <link rel="stylesheet" href="style.css"
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/TEENO (2).png" class="logo"
+
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+
+
+
+
+
+            </ul>
+        </nav>
+        <div class=header-text"">
+           <p>UI/UX Designer</p>
+           <h1>Hie<br>I am <span> Tinotenda </span>from HIT </h1> 
+        </div>
+
+    </div>
+</div>
+
+<!-- ------------about------------ -->
+<div id="about">
+     <div class="container">
+        <div class="row"
+             <div class="about-col-1">
+                <img src="images/about tino.jpg">
+             </div>
+             <div class="about-col-2">
+                <h1 class="sub-title">About Tinotenda</h1>
+                <p>My name as already hinted above is Tinotenda Mudehwe.I am a first year at Harare Institute of Technology. I am doing Information Security & Assuarance (ISA). At primary level, l excelled in all four subjects resulting in a the geading of 4 units as per the ZIMSEC grading system. I went on to high school and archieved success again when i wrote 10 subjects including the sciences an go 7As and 3Bs as per the ZIMSEC grading system. At A-LEVEL, l was doing MPC and a bit of Computer Science. Things did not go according to plan and l did not archieve success as l had wanted to but l bounced back and l aimed higher towards a futute in the Information Science Department at Harare Institute of Technology.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('languages')">Languages</p>   
+                </div>
+                <div class="tab-contents active-tab">
+                    <ul>
+                       <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
+                       <li><span>Web Development</span><br>Web app development</li>
+                       <li><span>App Development</span><br>Building Android/IOS apps</li>
+
+                    </ul>
+
+                </div>
+                <div class="tab-contents">
+                    <ul>
+                       <li><span>2022 - Current</span><br>Web Technology Training at HIT</li>
+                    </ul>
+
+                </div>
+                <div class="tab-contents">
+                    <ul>
+                       <li><span>Primary</span><br>ChiShona</li>
+                       <li><span>Secondary</span><br>English</li>
+                       <li><span>Tertiary</span><br>Japanese</li>
+
+                    </ul>
+
+                </div>
+             </div>
+           
+         </div>
+
+</div>
+
+<!-- ------------contact----------- -->
+
+<div id="contact"
+     <div class="container">
+      <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>tinotendamudehwe45@gmail.com</p>
+            <p>h220678q@hit.ac.zw</p>
+            <p>0783171240</p>
+            <div class="social-icons">
+                <a href="url of github"></a>
+            </div>
+        <div class="contact-right">
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </div>
+        <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a> 
+
+        </div>
+      </div>  
+     </div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classlist.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+   
+
+</script>
+
+
+</body>
+
+</html>
+
+
